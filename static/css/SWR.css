@@ -1,0 +1,59 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	background-color: #00112b;
+	overflow: hidden;
+}
+.some h1{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #f20202;
+	font-size: 23px;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 13px;
+	font-weight: normal;
+	z-index: 2;
+}
+
+h1 span{
+	position: absolute;
+	font-size: 100px;
+	top: 55%;
+	left: 40%;
+	transform: translate(-55%,-50%);
+	color: #ffff;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 18px;
+	font-weight: normal;
+	z-index: 1;
+}
+
+.dot{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 600px;
+  	width: 600px;
+  	z-index: 0;
+  	opacity: 0.3;
+  	background-color: #000;
+  	border-radius: 50%;
+  	
+}
+
+p{
+	position: absolute;
+	font-size: 20px;
+	width: 200px;
+	top: 50%;
+	left:60%;
+	opacity: 0.6;
+	transform: translate(-55%,-50%);
+	color: #ffff;
+	font-family: 'Abel', sans-serif;
+	font-weight: normal;
+	z-index: 1;	
+}

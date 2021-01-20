@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Graphide</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<section id="nav">
+		<ul class="nav justify-content-center">
+		  <li class="nav-item">
+		    <a class="nav-link active" href="/">PLOT</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="/rules">RULES</a>
+		  </li>
+		  
+		</ul>
+	</section> 
+
+	<section class="side-Bar">
+		<div class="side-bar">
+			<form action="fuctions">
+				<div class="input-group mb-3">
+				  <input type="text" class="form-control"  placeholder="eg : sin(x)" aria-label="	" aria-describedby="button-addon2" name="a">
+				  <div class="input-group-append">
+				    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+				  </div>
+				</div>
+			</form>
+			<ul>
+
+				{% for equation in equabank %}
+					
+					<form action="Deletefuction/{{equation.id}}/" class="check">
+						<li color = '';>{{equation.equations}} <button type="submit" class="btn btn-danger" color=''>x</button></li>
+
+					</form>
+				{%endfor%}
+			</ul>
+			<form action="clear" class="clear">
+				<button class="btn btn-outline-secondary" type="submit" id="button-addon3">clear</button>
+			</form>				
+			<div class="watermark" onselectstart="return false">
+			    <p class="lead">DEVELOPED BY</p>
+				<h1 class="display-4">AKASH</h1>
+			</div>
+		</div>
+	</section>
+
+	<div class="Graph" onselectstart="return true">
+		{% block graph %}
+		{% endblock %}	
+	</div>
+	
+	
+</body>
+</html

@@ -1,0 +1,98 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+
+}
+
+/* nav		side-bar 	Graph*/
+
+#nav{
+	position: sticky;
+	width: 100%;
+	z-index: 100;
+	background-color: #242582
+}
+
+.nav-item a{
+	color: #fff;
+}
+
+
+.side-Bar{
+	border-right: 1px solid #f0f0f0;
+	background-image: linear-gradient(to bottom,#fff,#f5f5f5);
+	height: 100%;
+	width: 30%;
+	overflow: hidden;
+}
+
+.side-Bar input{
+	background: transparent;
+	padding: 25px;
+	border-bottom: 2px solid #f0f0f0;
+	border-radius: 0;
+	
+}
+
+.side-Bar button{
+	border:none;
+	border-radius: 0;
+	color: white;
+	background-color:#F64C72;
+}
+.Graph{
+	height: 89%;
+	width: 70%;
+	position: fixed;	
+	right: 0px;
+	vertical-align: middle;
+	top: 0px;
+	z-index: 1;
+}
+.side-Bar ul{
+	list-style: none;
+	
+
+}
+.watermark{
+	position: fixed;
+	height: 30%;
+	width: 30%;
+	margin: 0;
+	left: 0;
+	top: 85%;
+	text-align: center;
+	opacity: 0.4;
+
+}
+
+.display-4{
+	margin: 0; 
+	padding: 0;
+
+}
+
+.lead {
+  margin: 0;
+  padding: 0;
+  }
+
+.clear button{
+	width: 100%;
+
+	background:  #86C232
+}
+.check{
+	padding: 5px;
+}
+
+.check button{
+	position: absolute;
+	left: 24.5%;
+	width: 70px;
+	
+
+}
