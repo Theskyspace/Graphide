@@ -1,5 +1,5 @@
 # Graphide
-Investigatory project for class 12 Computer science student. Using the concept Django requests ,JS rendering , Matplotlib etc.
+Online graph plotting system part of Investigatory project for class 12 Computer science student. Using the concept Django requests ,JS rendering , Matplotlib etc.
 
 # What it does?
 It takes complex mathematical equations and visualizes them in the form of graphs for visual learning.
